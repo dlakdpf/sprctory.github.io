@@ -8,45 +8,51 @@
     body {
       margin: 0;
       font-family: 'Apple SD Gothic Neo', sans-serif;
-      background: linear-gradient(to bottom, #ffe8e0, #fdf6ec); /* 노을빛 감성 추가 */
+      background: linear-gradient(to bottom, #fff2f2, #fdf6ec);
       color: #2d2d2d;
     }
 
     header {
-      background-color: #7a8b61;
-      color: #fffbe8;
-      padding: 1.5rem;
+      background-color: transparent;
+      color: #2d2d2d;
       text-align: center;
+      padding: 2rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     nav {
       text-align: center;
-      margin-top: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
     }
 
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: #7a8b61;
+      color: #e88b8b;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
-    .hero {
+    nav a:hover {
+      color: #e05555;
+    }
+
+    section.hero {
       text-align: center;
-      padding: 4rem 1rem;
+      padding: 3rem 1rem 2rem;
     }
 
     .hero-image {
-      max-width: 380px;
+      max-width: 300px;
       height: auto;
       margin-top: 2rem;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
       border-radius: 1rem;
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .hero-image:hover {
-      transform: scale(1.03);
     }
 
     .books {
@@ -57,16 +63,21 @@
     }
 
     .book {
-      background-color: white;
-      border: 1px solid #ddd;
+      background-color: #ffffff;
+      border: 1px solid #f0dada;
       padding: 1.5rem;
       border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
 
-    .footer {
-      background-color: #7a8b61;
-      color: white;
+    #about, #contact {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    footer {
+      background-color: #f0e2e2;
+      color: #555;
       text-align: center;
       padding: 1rem;
       margin-top: 2rem;
@@ -103,18 +114,18 @@
     </div>
   </section>
 
-  <section id="about" class="hero">
+  <section id="about">
     <h2>출판사 소개</h2>
-    <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.
+    <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.<br>
       작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.</p>
   </section>
 
-  <section id="contact" class="hero">
+  <section id="contact">
     <h2>문의</h2>
     <p>이메일: <a href="mailto:hello@spektory.kr">hello@spektory.kr</a></p>
   </section>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 스펙토리 출판사</p>
   </footer>
 </body>
