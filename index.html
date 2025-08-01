@@ -5,67 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>스펙토리 출판사</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-     margin: 0;
-     font-family: 'Apple SD Gothic Neo', sans-serif;
-     background: url('sunset-bg.png') no-repeat center center fixed;
-     background-size: cover;
-}
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', sans-serif;
+      background: url('sunset-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #2d2d2d;
     }
 
     .overlay {
-      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(255, 255, 255, 0.85);
+      min-height: 100vh;
       padding: 4rem 2rem;
-      margin: 0 auto;
-      max-width: 800px;
-      border-radius: 1rem;
-      box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
     }
 
-    .overlay h1 {
+    .hero-image {
+      max-width: 550px;
+      width: 90vw;
+      height: auto;
+      margin-bottom: 2rem;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+      border-radius: 1rem;
+    }
+
+    .content-box {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 1rem;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
       font-size: 2rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
     }
 
-    .overlay p {
-      font-size: 1rem;
+    p {
       line-height: 1.6;
-      color: #333;
-    }
-
-.hero-image {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  margin-top: 2rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  border-radius: 1rem;
-}
+      font-size: 1rem;
+      margin: 0.5rem 0;
     }
 
     @media (max-width: 600px) {
-      .overlay {
-        padding: 2rem 1rem;
+      .hero-image {
+        max-width: 90vw;
+      }
+
+      .content-box {
+        padding: 1.5rem;
       }
     }
   </style>
 </head>
 <body>
-  <main>
-    <img src="book-main.png" alt="제5의 세계 책 목업 이미지" class="book-image" />
-    <div class="overlay">
+  <div class="overlay">
+    <img src="book-main.png" alt="제5의 세계 표지" class="hero-image" />
+    
+    <div class="content-box">
       <h1>스펙토리 출판사</h1>
-      <p>
-        가능성과 경계의 이야기를 전합니다.<br />
-        스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.<br />
-        작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.
-      </p>
+      <p>가능성과 경계의 이야기를 전합니다.</p>
+      <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.</p>
+      <p>작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.</p>
     </div>
-  </main>
+  </div>
 </body>
 </html>
