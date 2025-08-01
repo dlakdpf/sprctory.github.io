@@ -9,93 +9,83 @@
     body {
       margin: 0;
       font-family: 'Noto Sans KR', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+      background: linear-gradient(to bottom, #fce3e1, #ffffff);
+      color: #2d2d2d;
     }
     header {
-      background-color: #1e1e1e;
-      padding: 2rem;
+      background-color: transparent;
       text-align: center;
-      border-bottom: 1px solid #333;
+      padding: 0;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      font-weight: bold;
-      color: #ffffff;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-      color: #bbbbbb;
+    .hero-image {
+      width: 100%;
+      max-height: 90vh;
+      object-fit: cover;
+      display: block;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     }
     nav {
       display: flex;
       justify-content: center;
       gap: 2rem;
-      background-color: #1e1e1e;
+      background-color: #ffffff;
       padding: 1rem 0;
+      border-bottom: 1px solid #ddd;
     }
     nav a {
-      color: #bbbbbb;
+      color: #444;
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
     }
     nav a:hover {
-      color: #f1f1f1;
+      color: #cc3366;
     }
     .hero {
       text-align: center;
-      padding: 3rem 1rem;
-      background-color: #181818;
-      animation: fadeIn 1s ease-in-out;
+      padding: 2rem 1rem;
     }
     .hero h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.75rem;
+      color: #cc3366;
     }
     .books {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
+      gap: 2rem;
       padding: 2rem;
     }
     .book {
-      background-color: #1a1a1a;
+      background-color: #fff6f6;
       padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(255, 170, 170, 0.2);
       transition: transform 0.3s ease;
     }
     .book:hover {
       transform: translateY(-5px);
     }
     .book h3 {
-      margin: 0 0 0.5rem 0;
-      color: #ffffff;
+      margin-top: 0;
+      color: #cc3366;
     }
     .book p {
-      color: #cccccc;
+      color: #444;
       font-size: 0.95rem;
     }
     .footer {
-      background-color: #1e1e1e;
-      color: #777;
+      background-color: #fff0f3;
+      color: #666;
       text-align: center;
       padding: 1.5rem;
-      margin-top: 2rem;
       font-size: 0.875rem;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(10px); }
-      100% { opacity: 1; transform: translateY(0); }
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>스펙토리</h1>
-    <p>무게 있는 이야기를 짙은 색으로 담아냅니다</p>
+    <img class="hero-image" src="book-main.jpg" alt="제5의 세계 대표 도서">
   </header>
   <nav>
     <a href="#">홈</a>
@@ -104,30 +94,31 @@
     <a href="#contact">문의</a>
   </nav>
   <section class="hero">
-    <h2>어둠 속에서 피어나는 문장</h2>
-    <p>가볍지 않은, 오래 남는 책을 만듭니다</p>
+    <h2>감각의 끝에서 만난 이야기</h2>
+    <p>찬란함과 그늘, 그 경계에 머무는 문장</p>
   </section>
   <section id="books" class="books">
     <div class="book">
       <h3>제5의 세계</h3>
-      <p>사라진 경계 속에서 다시 쓰는 인류의 이야기. 빛과 어둠 사이를 걷는 독자에게.</p>
+      <p>감각의 끝에서 만난 우리, 진짜 마음은 닿을 수 있을까? —  
+        치유와 사랑, 그리고 고요한 결심을 담은 몽환적인 서사.</p>
     </div>
     <div class="book">
-      <h3>나 죽으러 갑니다 <small style="color:#aaa;">(출간 예정)</small></h3>
+      <h3>나 죽으러 갑니다 <small style="color:#999;">(출간 예정)</small></h3>
       <p>삶의 가장 조용한 결심. 끝을 준비하는 문장의 힘.</p>
     </div>
   </section>
   <section id="about" class="hero">
     <h2>출판사 소개</h2>
-    <p>스펙토리는 감정의 어두운 결을 놓치지 않는 출판사입니다.  
-      단단하고 고요한 문장으로 마음의 그림자를 이야기합니다.</p>
+    <p>스펙토리는 감정의 결을 따라가는 출판사입니다.  
+      슬픔 속 빛을, 고요 속 울림을 발견하는 이야기를 만듭니다.</p>
   </section>
   <section id="contact" class="hero">
     <h2>문의</h2>
-    <p>이메일: <a href="mailto:hello@spektory.kr" style="color:#aaaaaa;">hello@spektory.kr</a></p>
+    <p>이메일: <a href="mailto:hello@spektory.kr">hello@spektory.kr</a></p>
   </section>
   <footer class="footer">
-    <p>&copy; 2025 스펙토리 출판사 | 감정의 농도는 글로 증명됩니다</p>
+    <p>&copy; 2025 스펙토리 출판사 | 감정의 밀도, 찬란하게 빛나다</p>
   </footer>
 </body>
 </html>
