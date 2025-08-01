@@ -5,128 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>스펙토리 출판사</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: 'Apple SD Gothic Neo', sans-serif;
-      background: linear-gradient(to bottom, #fff2f2, #fdf6ec);
-      color: #2d2d2d;
+      background: url('sunset-bg.png') no-repeat center center fixed;
+      background-size: cover;
     }
 
-    header {
-      background-color: transparent;
-      color: #2d2d2d;
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 4rem 2rem;
+      margin: 0 auto;
+      max-width: 800px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.1);
       text-align: center;
-      padding: 2rem 1rem 1rem;
     }
 
-    header h1 {
+    .overlay h1 {
       font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      text-align: center;
-      padding: 0.5rem;
       margin-bottom: 1rem;
     }
 
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #e88b8b;
-      font-weight: bold;
-      transition: color 0.3s ease;
+    .overlay p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #333;
     }
 
-    nav a:hover {
-      color: #e05555;
-    }
-
-    section.hero {
-      text-align: center;
-      padding: 3rem 1rem 2rem;
-    }
-
-    .hero-image {
-      max-width: 300px;
-      height: auto;
-      margin-top: 2rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    .book-image {
+      width: 240px;
+      margin: 3rem auto;
+      display: block;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       border-radius: 1rem;
     }
 
-    .books {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .book {
-      background-color: #ffffff;
-      border: 1px solid #f0dada;
-      padding: 1.5rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    }
-
-    #about, #contact {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    footer {
-      background-color: #f0e2e2;
-      color: #555;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+    @media (max-width: 600px) {
+      .overlay {
+        padding: 2rem 1rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>스펙토리 출판사</h1>
-    <p>가능성과 경계의 이야기를 전합니다</p>
-  </header>
-
-  <nav>
-    <a href="#">홈</a>
-    <a href="#books">도서</a>
-    <a href="#about">소개</a>
-    <a href="#contact">문의</a>
-  </nav>
-
-  <section class="hero">
-    <h2>대표 도서</h2>
-    <p>“감각의 끝에서 만난 우리, 진짜 마음은 닿을 수 있을까?”</p>
-    <img src="book-main.png" alt="제5의 세계 표지 – 해질녘 감성이 담긴 찬란한 일러스트" class="hero-image" />
-  </section>
-
-  <section id="books" class="books">
-    <div class="book">
-      <h3>제5의 세계</h3>
-      <p>인류가 잊은 다섯 번째 가능성에 대한 철학적 SF 에세이. 한계를 넘어선 상상력이 펼쳐진다.</p>
+  <main>
+    <img src="book-main.png" alt="제5의 세계 책 목업 이미지" class="book-image" />
+    <div class="overlay">
+      <h1>스펙토리 출판사</h1>
+      <p>
+        가능성과 경계의 이야기를 전합니다.<br />
+        스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.<br />
+        작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.
+      </p>
     </div>
-    <div class="book">
-      <h3>나 죽으러 갑니다 <small>(출간 예정)</small></h3>
-      <p>삶과 죽음 사이, 고요한 결심의 기록. 예정된 이별 속에서 피어나는 문장들.</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>출판사 소개</h2>
-    <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.<br>
-      작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.</p>
-  </section>
-
-  <section id="contact">
-    <h2>문의</h2>
-    <p>이메일: <a href="mailto:hello@spektory.kr">hello@spektory.kr</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 스펙토리 출판사</p>
-  </footer>
+  </main>
 </body>
 </html>
