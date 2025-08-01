@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스펙토리 출판사</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Apple SD Gothic Neo', sans-serif;
+      background-color: #fdf6ec;
+      color: #2d2d2d;
+    }
+    header {
+      background-color: #7a8b61;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #7a8b61;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .book {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .footer {
+      background-color: #7a8b61;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>스펙토리 출판사</h1>
+    <p>가능성과 경계의 이야기를 전합니다</p>
+  </header>
+  <nav>
+    <a href="#">홈</a>
+    <a href="#books">도서</a>
+    <a href="#about">소개</a>
+    <a href="#contact">문의</a>
+  </nav>
+  <section class="hero">
+    <h2>새로운 세계를 여는 책들</h2>
+    <p>스펙토리는 상상과 질문을 잇는 출판사입니다</p>
+  </section>
+  <section id="books" class="books">
+    <div class="book">
+      <h3>제5의 세계</h3>
+      <p>인류가 잊은 다섯 번째 가능성에 대한 철학적 SF 에세이. 한계를 넘어선 상상력이 펼쳐진다.</p>
+    </div>
+    <div class="book">
+      <h3>나 죽으러 갑니다 <small>(출간 예정)</small></h3>
+      <p>삶과 죽음 사이, 고요한 결심의 기록. 예정된 이별 속에서 피어나는 문장들.</p>
+    </div>
+  </section>
+  <section id="about" class="hero">
+    <h2>출판사 소개</h2>
+    <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다. 
+      작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.</p>
+  </section>
+  <section id="contact" class="hero">
+    <h2>문의</h2>
+    <p>이메일: <a href="mailto:hello@spektory.kr">hello@spektory.kr</a></p>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 스펙토리 출판사</p>
+  </footer>
+</body>
+</html>
