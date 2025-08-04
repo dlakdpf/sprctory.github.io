@@ -3,74 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>스펙토리 출판사</title>
+  <title>귀보 컴텐츠 - 원가 다른 너무</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: 'Apple SD Gothic Neo', sans-serif;
+      padding: 0;
+    }
+    body {
+      font-family: 'Pretendard', sans-serif;
       background: url('sunset-bg.png') no-repeat center center fixed;
       background-size: cover;
-      color: #2d2d2d;
-    }
-
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.85);
-      min-height: 100vh;
-      padding: 4rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero-image {
-      max-width: 350px; /* 줄임 */
-      width: 90vw;
-      height: auto;
-      margin-bottom: 2rem;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-      border-radius: 1rem;
-    }
-
-    .content-box {
-      background: rgba(255, 255, 255, 0.9);
-      padding: 2rem;
-      border-radius: 1rem;
-      max-width: 700px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
+      color: #333;
       line-height: 1.6;
-      font-size: 1rem;
-      margin: 0.5rem 0;
     }
-
-    @media (max-width: 600px) {
-      .hero-image {
-        max-width: 80vw;
+    .overlay {
+      background: rgba(255, 245, 230, 0.85);
+      backdrop-filter: blur(4px);
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .hero {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .hero-text {
+      flex: 2;
+    }
+    .hero-img {
+      flex: 1;
+    }
+    .hero-img img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .steps {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 0 24px;
+    }
+    .step {
+      text-align: center;
+      flex: 1;
+    }
+    .step img {
+      width: 56px;
+      margin-bottom: 8px;
+    }
+    .banner {
+      margin-top: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+    }
+    .banner img {
+      width: 40%;
+      border-radius: 8px;
+    }
+    .progress-box {
+      width: 60%;
+    }
+    .progress-box h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    .progress-bar {
+      width: 100%;
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+      margin-bottom: 8px;
+    }
+    .progress-fill {
+      width: 92%;
+      height: 100%;
+      background: linear-gradient(90deg, #ffaf7b, #ffc3a0);
+    }
+    .amount {
+      font-weight: bold;
+      font-size: 18px;
+      color: #444;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
       }
-
-      .content-box {
-        padding: 1.5rem;
+      .banner {
+        flex-direction: column;
+      }
+      .progress-box, .banner img {
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <img src="book-main.png" alt="제5의 세계 표지" class="hero-image" />
-    
-    <div class="content-box">
-      <h1>스펙토리 출판사</h1>
-      <p>가능성과 경계의 이야기를 전합니다.</p>
-      <p>스펙토리는 현실과 상상의 경계에서 독자에게 질문을 던지는 책을 만듭니다.</p>
-      <p>작지만 깊은 울림을 가진 콘텐츠를 통해 세상을 다시 바라보는 눈을 제안합니다.</p>
+    <div class="hero">
+      <div class="hero-text">
+        <h1>귀보가 컴텐츠를 만났을 때<br />원가 다른 *꼬계 너무*를 물입니다</h1>
+        <p>우르는 반화입니다.<br />우르가 발타는 위 세계는 해체방패일요?<br />‘꼬계 너무’가 화살의 명재소에서 숨지는 이름을 밟으며,<br />그 '심에니나이메' 순대로 기본기본 기본.<br /><br />기보 범단은 지시사랑벨로와 동규화 한 금전계도입니다.<br />기보는 밝신한 호응의 휘니티, 당사의 세상이 남기는 기르행으로 변신됩니다.
+        </p>
+      </div>
+      <div class="hero-img">
+        <img src="bookmain2.jpeg" alt="포스터 이미지" />
+      </div>
+    </div>
+
+    <h2 style="text-align: center; margin: 32px 0 16px; font-size: 20px;">참여는 간단하고, 영향은 김승합니다.
+    </h2>
+    <div class="steps">
+      <div class="step">
+        <img src="icon1.png" alt="콘텐츠 튜디오" />
+        <div>콘텐츠 트기</div>
+      </div>
+      <div class="step">
+        <img src="icon2.png" alt="기보 버튼" />
+        <div>기보 버튼 클릭</div>
+      </div>
+      <div class="step">
+        <img src="icon3.png" alt="화살" />
+        <div>화살하기</div>
+      </div>
+      <div class="step">
+        <img src="icon4.png" alt="결파 확인" />
+        <div>결파 확인하기</div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <img src="bookmain2.jpeg" alt="화살 이미지" />
+      <div class="progress-box">
+        <h2>당신의 클릭이 바꾸어내는 세계</h2>
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+        <div class="amount">₩75,000,000</div>
+      </div>
     </div>
   </div>
 </body>
